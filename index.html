@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="container-profile">
+            <img src="matheusin.jpg" alt="Profissional">
+            <h1 style="margin: 20px 0 20px 0;">Matheus FF</h1>
+            <p style="text-align: justify;">Olá eu sou Matheus, sou um Profissional de free fire, estou disposto a trabalhar em uma empresa / time, de, free fire </p>
+            <div class="container-profile-redes">
+                <a href=""><img src="instagram-icon.png" alt="Logo de rede social"></a>
+                <a href=""><img src="facebook-icon.png" alt="Logo de rede social"></a>
+                <a href=""><img src="camera-icon.png" alt="Logo de rede social"></a>
+            </div>
+        </div>
+        <div class="container-img">
+            <img src="dandocapa.jpg" alt="">
+        </div>
+    </div>
+    <div class="container-video">
+            <iframe src="https://www.youtube.com/embed/k39EAC43VXs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <input type="text" id="nameOfFF">
+    <h1 id="nameYou"></h1>
+    <button onclick="clickOfName()">
+        Clique aqui!
+    </button>
+    <script>
+        const nameOfFF = document.getElementById('nameOfFF').value;
+        
+       function clickOfName(){
+            document.getElementById('nameYou').innerHTML = ' Obrigado, por aparecer por aqui ' + nameOfFF;
+        }
+    </script>
+</body>
+</html>
